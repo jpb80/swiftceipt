@@ -10,7 +10,7 @@ angular.module('swiftCeiptApp', [
     config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl: 'views/top-navbar.html',
+            templateUrl: 'app/views/top-navbar.html',
             controller: 'MainController'
         }).
   /*      when('/login', {
