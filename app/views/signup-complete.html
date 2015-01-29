@@ -1,0 +1,44 @@
+
+
+<!-- Registration form -->
+<form action="/signup" method="post"
+      class="form-content" name="registration" id="registration" data-parsley-validate>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="text" class="form-control" id="inputFullName" placeholder="Full name" maxlength="255" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email address" maxlength="255" data-parsley-trigger="change" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="password"class="form-control" id="inputPassword" placeholder="Password" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="password" class="form-control" id="inputConfPassword" placeholder="Confirm password" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone number"  maxlength="35"  required>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <div class="col-xs-offset-0 formSize">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="agree" value="1" required> I have read and agree to the <a href="privacy_terms.html">Terms of Use and Privacy Policy</a>.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-0 formSize">
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="SIGN UP">
+        </div>
+    </div>
+</form>
+<!-- End registration -->

@@ -1,6 +1,5 @@
 			body {
 				margin-top: 50px;
-				margin-bottom: 50px;
 				background: none;
               	font-family: 'Roboto Condensed', sans-serif;
               	color: #6B6765;
@@ -8,7 +7,7 @@
             
             .container {
                 width: 100%;
-                height: 100%;
+				height: 100%;
                 margin: 0 auto;
             }
             
@@ -20,6 +19,16 @@
                 border-style: none !important;
 
             }
+
+			.navbar-bottom {
+				background-color: #6B6765 !important;
+				color: white !important;
+
+			}
+			.navbar-bottom a {
+				color: white !important;
+
+			}
 
             /* Set Bootstrap jumbotron background to transparent
              and adjust styling of SwiftCeipt header & logo. */
@@ -173,7 +182,7 @@
              
             /* Styling for when a navigation menu link is set to active: underline with teal font color */ 
             .active a  {
-                background-color: #F5F9F8 !important;                
+                background-color: #F5F9F8 !important;
                 color: #59AC98 !important;
                 text-decoration: underline !important;
             } /* end */
@@ -733,12 +742,27 @@
 
 				.panel-images {
 					background-image: url("../images/organized-zen.jpeg") !important;
+					max-width: 100%;
 					/* background-repeat: no-repeat; */
 				}
 
 				.panel {
+					margin: 0 auto !important;
 					height: 40em;
 				}
+
+				.list-panel {
+					max-width: 100%;
+					height: 25em;
+				}
+
+				.download-panel {
+					max-width: 100%;
+					background-color: #6B6765;
+					height: 13em;
+				}
+
+
 
 			/*@media (min-width: 1200px) {
 				.content-panel {
@@ -778,7 +802,34 @@
 
 			.content-panel {
 				margin: 0 auto;
-				width: 100%;
+				width: 80em;
 				height: 100%;
 				padding: 210px;
+			}
+
+			.content-list {
+				margin: 0 auto;
+				height: 100%;
+				padding-top: 9em;
+			}
+
+
+			/* Below are the styles for the landing page text headers and list */
+			.xlg-orange-txt {
+				font-size: 3.66em;
+				color: #F95722;
+			}
+
+			.lg-white-txt {
+				font-size: 2.66em;
+				color: #ffffff;
+			}
+
+			.md-teal-txt {
+				font-size: 1.66em;
+				color: #59AC98;
+			}
+
+			.list-txt-size {
+				font-size: 1.05em;
 			}

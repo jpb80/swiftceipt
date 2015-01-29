@@ -1,0 +1,26 @@
+<!-- Temporary registration for interested users -->
+<form action="/signup" method="post" class="form-content" name="registration" id="registration">
+    <div class="form-group">
+        <div class="formSize">
+            <input type="text" class="form-control" id="inputFullName" ng-init="John" ng-bind="name" maxlength="255" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="formSize">
+            <input type="email" class="form-control" id="inputEmail" maxlength="255" required>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <div class="col-xs-offset-0 formSize">
+            <label class="checkbox-inline">
+                <input type="checkbox"name="agree" value="1" required> I have read and agree to the <a href="privacy_terms.html">Terms of Use and Privacy Policy</a>.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-0 formSize">
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign up">
+        </div>
+    </div>
+</form>
+<!-- End temp registration -->
