@@ -649,16 +649,7 @@
 					fill:  #4875B4 !important;
 				}
 				/* end */
-				
-				/* Home.html download app from App Store, Play, Windows Mobile.. */
-				.downloadContainer {
-					bottom: 0;
-					position: absolute;
-					width: 100%;
-					height: 4em;
-					margin: 0 auto;
-					
-				}
+
 				
 				.downloadContainer #appstore-icon  {
 					bottom: 0;
@@ -759,7 +750,7 @@
 				.download-panel {
 					max-width: 100%;
 					background-color: #6B6765;
-					height: 13em;
+					height: 20em;
 				}
 
 
