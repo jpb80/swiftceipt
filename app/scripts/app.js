@@ -10,15 +10,15 @@ angular.module('swiftCeiptApp', [
     config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl: 'app/views/top-navbar.html',
+            templateUrl: 'app/views/landing-page-content.html',
             controller: 'MainController'
         }).
-  /*      when('/login', {
-            templateUrl: 'views/swiftceipt.html',
+        when('/signup', {
+            templateUrl: 'app/views/signup.html',
             controller: 'MainController'
-        }). */
+        }).
         otherwise({
-          redirectTo: '/'
+          templateUrl: 'app/views/404.html'
         });
   }]);
 

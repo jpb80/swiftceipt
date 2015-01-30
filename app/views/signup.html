@@ -1,26 +1,33 @@
 <!-- Temporary registration for interested users -->
-<form action="/signup" method="post" class="form-content" name="registration" id="registration">
-    <div class="form-group">
-        <div class="formSize">
-            <input type="text" class="form-control" id="inputFullName" ng-init="John" ng-bind="name" maxlength="255" required>
+<div class="container form-panel">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <form action="#/x-services/signup" class="form-group-lg form-horizontal" method="post" name="registration" id="registration" novalidate>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputFullName" ng-init="user.name='John Smith'" ng-model="user.name" maxlength="255" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" ng-init="user.email='John.Smith@hotmail.com'" ng-model="user.email" maxlength="255" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" ng-init="user.password='swiftceiptrocks'" ng-model="user.password" maxlength="255" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputConfPassword" ng-init="user.password='swiftceiptrocks'" ng-model="user.password" maxlength="255" required>
+                </div>
+                <div class="form-group text-center">
+                    <label class="checkbox-inline">
+                        <input type="checkbox"name="agree" value="1" required> I have read and agree to the <a href="privacy_terms.html">Terms of Use and Privacy Policy</a>.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="SIGN UP">
+                </div>
+            </form>
         </div>
+        <div class="col-lg-4"></div>
     </div>
-    <div class="form-group">
-        <div class="formSize">
-            <input type="email" class="form-control" id="inputEmail" maxlength="255" required>
-        </div>
-    </div>
-    <div class="form-group text-center">
-        <div class="col-xs-offset-0 formSize">
-            <label class="checkbox-inline">
-                <input type="checkbox"name="agree" value="1" required> I have read and agree to the <a href="privacy_terms.html">Terms of Use and Privacy Policy</a>.
-            </label>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-xs-offset-0 formSize">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign up">
-        </div>
-    </div>
-</form>
+</div>
+
 <!-- End temp registration -->

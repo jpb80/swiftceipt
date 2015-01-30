@@ -29,15 +29,6 @@
 				color: white !important;
 
 			}
-
-            /* Set Bootstrap jumbotron background to transparent
-             and adjust styling of SwiftCeipt header & logo. */
-            .myJumbotron {
-                 padding: 1pt;
-                 font-size: 16pt;
-                 height: 160px;
-                 background-color: transparent;
-            }
             
             .swiftceiptHeader {
             	margin-left: 100px;
@@ -48,21 +39,7 @@
             	padding-bottom: 0.5em;
             	padding-top: 0.5em;
             } /* end styling SwiftCeipt logo */
-            
-            
-            /*Dropdown for the Sign in menu itself*/
-            .dropdown-menu{width: 300px;border-top:0px;margin-top:3px;}
-            .dropdown-menu .col-sm-12{margin-bottom:7px;}
-            .dropdown-menu:after{
-               content: '';
-                display: inline-block;
-                border-left: 6px solid transparent;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid #ffffff;
-                position: absolute;
-                top: -6px;
-                right: 10px;
-            }
+
           
             /* Add top padding and shift the top navigation to the right */
             .navbar-right{
@@ -97,19 +74,27 @@
             /* Make form input square */
             .form-control {
                 border-radius: 0px !important;
+				box-shadow: none !important;
             }/* end */
             
             
             /* Button styling changes */
             .btn {
                 border-radius: 0px !important;
+				box-shadow: none !important;
+
             }
+
+			.btn .btn-primary:focus {
+				box-shadow: none !important;
+			}
             
             /* btn-primary = navbar signin button */
             .btn-primary {
                 background-color: #F95722 !important;
                 border-color: #F95722 !important;
                 margin-top: 1em;
+				box-shadow: none !important;
             }
             
             .btn-primary:hover {
@@ -123,6 +108,7 @@
             .btn-success {
                 background-color: #F95722 !important;
                 border-color: #F95722 !important;
+				box-shadow: none !important;
             }
             
             .btn-success:hover {
@@ -159,27 +145,16 @@
             
                      
             /* Begin changes to registration input form */          
-            form.form-content div.form-group input:focus{
+            .form-group input:focus{
                 border-color: #F95722 !important;
                 box-shadow: none !important;  
             }
             
-             form.form-content div.form-group input:hover {
+             .form-group input:hover {
                 border-color: #F95722 !important;    
             } /* end */
             
-            
-            /* Begin changes to sign in input form */ 
-            div.container nav.navbar ul.nav input:focus {
-                border-color: #F95722 !important;
-                box-shadow: none !important;
-             }
-             
-            div.container nav.navbar ul.nav input:hover {
-                border-color: #F95722 !important;
-             } /* end */
-             
-             
+
             /* Styling for when a navigation menu link is set to active: underline with teal font color */ 
             .active a  {
                 background-color: #F5F9F8 !important;
@@ -197,15 +172,7 @@
                display: table-cell;
                height: 100%;
             }
-            
-            /* Center registration form 
-            div.container form.form-horizontal {
-                margin: 0 auto;
-                float: none;
-                left: 9%;
-                max-width: 45%;   
-            } /* end */
-            
+
             /* Center navbar */    
             @media (min-width: 768px) {
                 .navbar .navbar-nav {
@@ -216,34 +183,6 @@
                     text-align: center;
                 }
             }
-            
-           	/* The paper-like styling for the LearnMore content on the landing page */
-         /*   .column {
-                text-align: left !important;
-                display: block !important;
-                width: 500px !important;
-                height: 350px !important;
-                max-width: 100em !important;
-                float:left !important;
-               	padding-top: 60px;
-                padding-left: 55px !important;
-                padding-right: 55px !important;
-                margin: 14px !important;
-				background-color: #fff;
-				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.24);
-            } /* end */
-            
-              
-              
-            /* Styling of the content cards container */
-           /* .column-container {
-				margin: 14px !important;
-            	padding-left: 170px;
-                padding-top: 70px;
-                padding-bottom: 750px !important;
-                margin: 0px auto;
-            } /* end */
-            
             
             /* Enterprise content section*/ 
             .enterpriseContent p {
@@ -737,6 +676,14 @@
 					/* background-repeat: no-repeat; */
 				}
 
+				.error-image {
+					background-image: url("../images/crumpled paper1.png");
+					background-position: center;
+					background-size: 30%;
+					padding: 10em;
+					background-repeat: no-repeat;
+				}
+
 				.panel {
 					margin: 0 auto !important;
 					height: 40em;
@@ -751,6 +698,12 @@
 					max-width: 100%;
 					background-color: #6B6765;
 					height: 20em;
+				}
+
+				.form-panel {
+					width: 100%;
+					height: 100%;
+					padding: 10%;
 				}
 
 
@@ -823,4 +776,9 @@
 
 			.list-txt-size {
 				font-size: 1.05em;
+			}
+
+			.lg-black-txt {
+				font-size: 2.66em;
+				color: #000000;
 			}
