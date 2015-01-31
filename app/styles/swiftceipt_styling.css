@@ -3,6 +3,7 @@
 				background: none;
               	font-family: 'Roboto Condensed', sans-serif;
               	color: #6B6765;
+				border: none !important;
             }
             
             .container {
@@ -692,7 +693,7 @@
 
 				.list-panel {
 					max-width: 100%;
-					height: 25em;
+					height: 30em;
 				}
 
 				.download-panel {
@@ -709,6 +710,14 @@
 
 				.info-image-panel {
 					height: 100em;
+					background-color: #59AC98;
+					padding-top: 3%;
+				}
+
+				.content-signup-panel {
+					background-color: white;
+					height: 30em;
+					padding-top: 5%;
 				}
 
 
@@ -786,7 +795,7 @@
 
 			.lg-black-txt {
 				font-size: 2.66em;
-				color: #000000;
+				color: #6B6765;
 			}
 
 			div.transbox {
@@ -805,6 +814,7 @@
 					font-size: 68%;
 					padding-bottom: 30em;
 				}
+
 				.btn {
 					font-size: 1em;
 				}
@@ -813,7 +823,4 @@
 					font-size: 35%;
 
 				}
-
-
-
 			}
