@@ -707,6 +707,10 @@
 					padding: 10%;
 				}
 
+				.info-image-panel {
+					height: 100em;
+				}
+
 
 
 			/*@media (min-width: 1200px) {
