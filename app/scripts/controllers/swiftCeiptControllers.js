@@ -8,16 +8,13 @@ swiftCeiptControllers.controller('MainController', ['$scope', 'Main',
     }]);
 
 
-swiftCeiptControllers.controller('LoginCtrl', ['$scope', 'Main',
-    function($scope, Main) {
-        $scope.user = {
-            name : "John Smith",
-            email : "smith.john@gmail.com",
-            password : "password"
-        };
-        $scope.showJson = function() {
-            $scope.json = angular.toJson($scope.user);
-        }
+swiftCeiptControllers.controller('LoginCtrl', [function() {
+
+    var self = this;
+
+    self.submit = function() {
+        console.log('User clicked submit with ', self.user);
+    };
     }]);
 
 swiftCeiptControllers.controller('TestServiceCtrl', ['$scope', 'Main',

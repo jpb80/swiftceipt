@@ -798,12 +798,32 @@
 				color: #6B6765;
 			}
 
+			.red-txt {
+				color: red;
+			}
+
 			div.transbox {
 				margin: 30px;
 				padding: 5px;
 				border: none;
 				background: rgba(188, 188, 188, 0.4);
 			}
+
+
+			.form-control.ng-dirty.ng-invalid-required {
+				background: rgba(255, 0, 0, 0.2);
+
+			}
+
+			.form-control.ng-invalid-email {
+				background: rgba(255, 25, 25, 0.2);
+			}
+
+			.form-control.ng-invalid-minlength {
+				background: rgba(255, 25, 25, 0.2);
+
+			}
+
 
 			@media screen and (max-width: 500px) {
 				body {
