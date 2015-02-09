@@ -1,57 +1,71 @@
 <!-- Temporary registration for interested users -->
 <div class="container form-panel">
     <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4" ng-controller="LoginCtrl as ctrl">
-            <form action="#/x-services/signup" ng-submit="ctrl.submit();" class="form-group-lg form-horizontal"
+        <div ng-controller="LoginCtrl as ctrl">
+            <form ng-submit="ctrl.submit();" class="form-group-lg form-horizontal"
                                                             method="post" name="registration" id="registration" novalidate>
+                <!-- First name  -->
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputFullName" ng-init="ctrl.user.name='John Smith'"
-                                    name="fname"  ng-model="ctrl.user.name" ng-minlength="2" ng-maxlength="255" required />
-                    <span class="red-txt" ng-show="registration.fname.$error.required">
+                    <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                    name="fname"  ng-model="ctrl.user.firstName" ng-minlength="2" ng-maxlength="255" required />
+                    <span class="red-txt" ng-show="registration.fname.$error.required && registration.fname.$dirty">
                     This is a required field
                     </span>
-                    <span class="red-txt" ng-show="registration.fname.$error.minlength">
+                    <span class="red-txt" ng-show="registration.fname.$error.minlength && registration.fname.$dirty">
                     Minimum length required is 2
                     </span>
-                    <span class="red-txt" ng-show="registration.fname.$invalid">
+                    <span class="red-txt" ng-show="registration.fname.$invalid && registration.fname.$dirty">
+                    This field is invalid
+                    </span>
+                </div>
+                <!-- Last name -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last name"
+                           name="lname"  ng-model="ctrl.user.lastName" ng-minlength="2" ng-maxlength="255" required />
+                    <span class="red-txt" ng-show="registration.lname.$error.required && registration.lname.$dirty">
+                    This is a required field
+                    </span>
+                    <span class="red-txt" ng-show="registration.lname.$error.minlength && registration.lname.$dirty">
+                    Minimum length required is 2
+                    </span>
+                    <span class="red-txt" ng-show="registration.lname.$invalid && registration.lname.$dirty">
                     This field is invalid
                     </span>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="uemail" class="form-control" id="inputEmail" ng-init="ctrl.user.email='John.Smith@hotmail.com'"
+                    <input type="email" name="uemail" class="form-control" id="inputEmail" placeholder="Email address"
                                                                     ng-model="ctrl.user.email" maxlength="255" required />
-                    <span class="red-txt" ng-show="registration.uemail.$error.required">
+                    <span class="red-txt" ng-show="registration.uemail.$error.required && registration.uemail.$dirty">
                     This is a required field
                     </span>
-                    <span class="red-txt" ng-show="registration.uemail.$error.minlength">
+                    <span class="red-txt" ng-show="registration.uemail.$error.minlength && registration.uemail.$dirty">
                     Minimum length required is 2
                     </span>
-                    <span class="red-txt" ng-show="registration.uemail.$invalid">
+                    <span class="red-txt" ng-show="registration.uemail.$invalid && registration.uemail.$dirty">
                     This field is invalid
                     </span>
                 </div>
                 <div class="form-group">
                     <input type="password" name="upass" class="form-control" id="inputPassword" ng-minlength="6"
-                           ng-init="ctrl.user.password='swiftceiptrocks'" ng-model="ctrl.user.password" maxlength="255" required />
-                    <span class="red-txt" ng-show="registration.upass.$error.required">
+                           placeholder="Password" ng-model="ctrl.user.password" maxlength="255" required />
+                    <span class="red-txt" ng-show="registration.upass.$error.required && registration.upass.$dirty">
                     This is a required field
                     </span>
-                    <span class="red-txt" ng-show="registration.upass.$error.minlength">
+                    <span class="red-txt" ng-show="registration.upass.$error.minlength && registration.upass.$dirty">
                     Minimum length required is 6</span>
-                    <span class="red-txt" ng-show="registration.upass.$invalid">
+                    <span class="red-txt" ng-show="registration.upass.$invalid && registration.upass.$dirty">
                     This field is invalid
                 </div>
                 <div class="form-group">
                     <input type="password" name="upass2" class="form-control" id="inputConfPassword" ng-minlength="6"
-                           ng-init="ctrl.user.password2='swiftceiptrocks'" ng-model="ctrl.user.password2" maxlength="255" required />
-                    <span class="red-txt" ng-show="registration.upass2.$error.required">
+                           placeholder="Confirm password" ng-model="ctrl.user.password2" maxlength="255" required />
+                    <span class="red-txt" ng-show="registration.upass2.$error.required && registration.upass2.$dirty">
                     This is a required field
                     </span>
-                    <span class="red-txt" ng-show="registration.upass2.$error.minlength">
+                    <span class="red-txt" ng-show="registration.upass2.$error.minlength && registration.upass2.$dirty">
                     Minimum length required is 6
                     </span>
-                    <span class="red-txt" ng-show="registration.upass2.$invalid">
+                    <span class="red-txt" ng-show="registration.upass2.$invalid && registration.upass2.$dirty">
                     This field is invalid
                 </div>
                 <div class="form-group text-center">
@@ -59,7 +73,7 @@
                         <input type="checkbox" ng-model="ctrl.user.agree" name="uagree" value="1" required>
                             I have read and agree to the <a href="privacy_terms.html">Terms of Use and Privacy Policy</a>.
                     </label>
-                    <span class="red-txt" ng-show="registration.uagree.$error.required">
+                    <span class="red-txt" ng-show="registration.uagree.$error.required && registration.uagree.$dirty">
                     <br>This is a required field
                 </div>
                 <div class="form-group">
@@ -67,7 +81,6 @@
                 </div>
             </form>
         </div>
-        <div class="col-lg-4"></div>
     </div>
 </div>
 

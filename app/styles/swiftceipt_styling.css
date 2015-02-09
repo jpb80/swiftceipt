@@ -30,16 +30,6 @@
 				color: white !important;
 
 			}
-            
-            .swiftceiptHeader {
-            	margin-left: 100px;
-            }
-            
-            .logo {
-            	margin: 0 auto;
-            	padding-bottom: 0.5em;
-            	padding-top: 0.5em;
-            } /* end styling SwiftCeipt logo */
 
           
             /* Add top padding and shift the top navigation to the right */
@@ -52,13 +42,7 @@
 			.signin-navbar {
 				float: right !important;
 			}
-	    
-		    /*Dropdown header text */
-		    #dropdown_header_text {
-		      text-align: left !important;
-		      font-size: x-large;
-		    }
-            
+
             /* Styling cursive text to the side of Swiftceipt header */
             .motto {
                 font-family: 'Indie Flower', cursive;
@@ -66,11 +50,7 @@
                 padding-left: 15.5em;
                 color: #59AC98;
             } /* end */
-            
-			/* Styling for the container with the Learn More link */
-            .bottom-header {
-                padding: 1pt;
-            }
+
             
             /* Make form input square */
             .form-control {
@@ -119,20 +99,6 @@
 				top: -2px;
             }/* end Button styling changes */
             
-            
-            /* #learnmorelink btn-success = form buttons */
-            #learnmorelink.btn-success {
-            	font-size: 18pt;
-                background-color: #59AC98 !important;
-                border-color: #59AC98 !important;
-            }
-            
-            #learnmorelink.btn-success:hover {
-            	font-size: 19pt;
-                background-color: #4D9685 !important; 
-            }/* end Button styling changes */
-            
-            
             /* Increase font size of the navbar */
             div.container nav.navbar div.collapse ul.nav a {
                 /*font-size: larger !important;*/
@@ -143,8 +109,8 @@
             div.container nav.navbar div.collapse ul.nav a:hover {
                 color: #59AC98 !important;
             } /* end */
-            
-                     
+
+
             /* Begin changes to registration input form */          
             .form-group input:focus{
                 border-color: #F95722 !important;
@@ -154,7 +120,7 @@
              .form-group input:hover {
                 border-color: #F95722 !important;    
             } /* end */
-            
+
 
             /* Styling for when a navigation menu link is set to active: underline with teal font color */ 
             .active a  {
@@ -176,81 +142,15 @@
 
             /* Center navbar */    
             @media (min-width: 768px) {
-                .navbar .navbar-nav {
-                    display: inline-block;
-                    float: none;
-                }
-                .navbar .navbar-collapse {
-                    text-align: center;
-                }
-            }
-            
-            /* Enterprise content section*/ 
-            .enterpriseContent p {
-            	 color: #6B6765;
-            }
-            
-           .enterpriseContent {
-           		position: relative !important;
-				margin: 0 auto;
-				display:block;
-				margin-top: 10pt;
-				padding: 12px;
-				height: 1450px;
-				width: 700px;
-				vertical-align: top;
-				background-color: #fff;
-				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.24);	
-           }
-           
-            .enterpriseContent h2 {
-		    	font-size: 25pt;
-				text-align: left;    
-		    } /* end */
-		    
-		   	.enterpriseContent p {
-              font-size: 16pt;
-              text-align: left;
-            } /* end */
-           
-           #enterpriseContentSections {
-           	   	padding-top: 50px;
-		    	padding-bottom: 10px;
-           }
-           
-           /* The paragraph sections in individual cards */ 
-           .learnContent p {
-                color: #6B6765;
-            } /* end */
-               
-            /* Landing page learn more card content styling */
-		    .learnContent {
-				position: relative !important;
-				margin: 0 auto;
-				display:block;
-				margin-top: 110pt;
-				padding: 12px;
-				height: 1050px;
-				width: 700px;
-				vertical-align: top;
-				background-color: #fff;
-				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.24);
-		    }
-		    
-		    .learnContent h2 {
-		    	font-size: 25pt;
-				text-align: left !important;    
-		    } /* end learnContent */
-		    
-		    .learnContent p {
-              font-size: 16pt;
-            } /* end */
-		    
-		   #learnContentSections {
-		    	padding-top: 50px;
-		    	padding-bottom: 10px;
-		    	
-		   }
+				.navbar .navbar-nav {
+					display: inline-block;
+					float: none;
+				}
+
+				.navbar .navbar-collapse {
+					text-align: center;
+				}
+			}
                
             /* Highlighted orange & bold words in the card headers*/
             span.text-orange {
@@ -261,70 +161,8 @@
             span.text-teal {
             	color: #59AC98;
             } /* end */
-                 
-            /* The paragraph sections in individual cards */ 
-            .termsContent p {
-                font-size: large !important;
-                color: #6B6765;
-            } /* end */
-               
-            /* Terms and Conditions card content styling */
-		    .termsContent {
-				position: relative;
-				display: inline-block;
-				padding: 12px;
-				height: auto;
-				width: 980px;
-				min-width: 55em;
-				vertical-align: top;
-				background-color: #fff;
-				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.24);
-				text-align: left;
-		    }
-		    
-		    .termsContent h2 {
-				text-align: center !important;    
-		    } /* end  Terms and Cond. */
-		    
-		    
-		    /* Styling in about.html .aboutContainer for the team photo and team text information */
-		    .aboutContainer {
-		    	margin: 0 auto;
-		    	margin-top: -65px;
-				position: relative;
-				display:table;
-				padding: 8px;
-				height: auto;
-				width: 980px;
-				min-width: 55em;
-				vertical-align: top;
-				background-color: #fff;
-				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.24);
-				text-align: left;
-		    }
-		    
-		    .aboutContent#left {
-				background-color: #F5EBE7;
-				float: left;
-				display: inline;
-				height: 180px;
-				width: 450px;
-				margin-left: 5px;
-				margin-bottom: 45px
-				
-		    } 
-		    
-		    .aboutContent#right {
-				background-color: #F5EBE7;
-				float: right;
-				display: inline;
-				height: 180px;
-				width: 450px;
-				margin-left: 5px;
-				margin-bottom: 45px
-				
-		    } 
-		    
+
+
 		    .teamText {
 		    	width: 300px;
 		    	height: auto;
@@ -406,7 +244,7 @@
 			    /*Full Name form input icon
 			    icon height: 10.441px
 			    50% gray*/
-			    input#inputFullName {
+			    input#firstName {
 				    background-image: url(../images/fullname-content.png);
 				    background-position: 10px center;
 				    background-repeat: no-repeat;
@@ -426,12 +264,42 @@
 				    transition: all 0.2s;
 			    }
 			    
-			    input#inputFullName:focus {
+			    input#firstName:focus {
 				    /* Picked a random icon from Google */
 				    background-position: -20px center;
 				    text-indent: 0;
 				
 				}
+
+			/*Full Name form input icon
+			icon height: 10.441px
+			50% gray*/
+			input#lastName {
+				background-image: url(../images/fullname-content.png);
+				background-position: 10px center;
+				background-repeat: no-repeat;
+				border: 1px solid #ccc;
+
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+
+				padding: 10px 5px;
+				text-indent: 28px;
+
+				-webkit-transition: all 0.2s;
+				-moz-transition: all 2s;
+				transition: all 0.2s;
+			}
+
+			input#lastName:focus {
+				/* Picked a random icon from Google */
+				background-position: -20px center;
+				text-indent: 0;
+
+			}
 			    
 			    
 			    /*Email form input icon
@@ -597,74 +465,14 @@
 					width: 136px;
 					height: 43px;
 				} /* end */
-				
-						
-				/*header styling for each page */
-				/* news.html */
-				.news-header {
-					width: 518px;
-					margin: 0 auto;
-					text-align: left;
-					padding-bottom: 20px;
-					margin-top: -30px;
-				}
-				
-				/* about.html */
-				.aboutus-header {
-					width: 980px;
-					margin: 0 auto;
-					text-align: left;
-					padding-bottom: 80px;
-					margin-top: -40px;
-				}
-				
-				/* enterprise.html */
-				.enterprise-header {
-					width: 700px;
-					margin: 0 auto;
-					text-align: left;
-					padding-bottom: 5px;
-					margin-top: -20px;
-				}
-				
-				/* contact.html */
-				.contact-header {
-					width: 552px;
-					margin: 0 auto;
-					text-align: left;
-				}
-				
-				/* contactt.html address info sytling */	
-				.contact-info {
-					font-size: 14pt;
-					width: 560px;
-					margin: 0 auto;
-					text-align: left;
-					margin-top: 50px;
-				}/* end */
-				
-				/* "New to SwiftCeipt" text and Sign up button */
-				.bottomheader-content {
-					width: 300px;
-					height: 122pt;
-					margin: 0 auto;
-					text-align: center;
-					padding-top: 5px;
-				}	
+
+
 				
 				.bottomheader-content h2 {
 					padding-left: 26px;
 				}
-				
-				#signuplink {
-					width: 300px;
-				}
-				
-				#learnmorelink {
-					margin-top: 5pt;
-					width: 300px;
-				}
-				
+
+
 				.navbar-bottom {
 					height: auto;
 					margin: 0 auto;
@@ -672,24 +480,28 @@
 				}
 
 				.panel-images {
-					background-image: url("../images/organized-zen.jpeg") !important;
-					max-width: 100%;
-					height: 50em;
-					/* background-repeat: no-repeat; */
+					background-image: url("../images/hand-w-w-register.png");
+					background-size: cover;
+					height: 100%;
+					background-repeat: no-repeat;
 				}
 
 				.error-image {
 					background-image: url("../images/crumpled paper1.png");
 					background-position: center;
-					background-size: 30%;
+					background-size: contain;
 					padding: 10em;
 					background-repeat: no-repeat;
 				}
 
-				.panel {
-					margin: 0 auto;
-					height: 40em;
+				.info-image {
+					background-image: url("../images/swfitceipt_info.png");
+					background-position: center;
+					background-size: 75% auto;
+					height: 100%;
+					background-repeat: no-repeat;
 				}
+
 
 				.list-panel {
 					max-width: 100%;
@@ -705,7 +517,11 @@
 				.form-panel {
 					width: 100%;
 					height: 100%;
-					padding: 10%;
+					max-width: 650px;
+					padding-left: 4em;
+					padding-right: 4em;
+					padding-top: 10em;
+					padding-bottom: 12em;
 				}
 
 				.info-image-panel {
@@ -720,49 +536,9 @@
 					padding-top: 5%;
 				}
 
-
-
-			/*@media (min-width: 1200px) {
-				.content-panel {
-					margin: 0 auto;
-					width: 850px;
-					height: 100%;
-					padding: 200px;
-				}
-			}
-
-			@media (min-width: 768px) {
-				.content-panel {
-					margin: 0 auto;
-					width: 700px;
-					height: 100%;
-					padding: 200px;
-				}
-			}
-
-			@media (min-width: 768px) {
-				.content-panel {
-					margin: 0 auto;
-					width: 700px;
-					height: 100%;
-					padding: 200px;
-				}
-			}
-
-			@media (min-width: 200px) {
-				.content-panel {
-					margin: 0 auto;
-					width: 410px;
-					height: 100%;
-					padding: 132px;
-				}
-			} */
-
 			.content-panel {
 				margin: 0 auto;
 				width: 50%;
-				/*height: 100%;
-				padding: 210px; */
 				padding-top: 10%;
 			}
 
@@ -772,15 +548,21 @@
 				padding-top: 9em;
 			}
 
+			.content-signup-panel {
+				padding-top: 10em;
+			}
+
 
 			/* Below are the styles for the landing page text headers and list */
 			.xlg-orange-txt {
 				font-size: 3.66em;
+				font-weight: bolder;
 				color: #F95722;
 			}
 
 			.lg-white-txt {
 				font-size: 2.66em;
+				font-weight: bolder;
 				color: #ffffff;
 			}
 
@@ -793,8 +575,7 @@
 				font-size: 1.05em;
 			}
 
-			.lg-black-txt {
-				font-size: 2.66em;
+			.lg-black-txt {  font-size: 2.66em;
 				color: #6B6765;
 			}
 
@@ -804,9 +585,9 @@
 
 			div.transbox {
 				margin: 30px;
-				padding: 5px;
+				padding: 2em;
 				border: none;
-				background: rgba(188, 188, 188, 0.4);
+				background: rgba(175, 175, 175, 0.45);
 			}
 
 
@@ -825,22 +606,162 @@
 			}
 
 
-			@media screen and (max-width: 500px) {
-				body {
-					max-height: 100%;
+			@media screen and (min-width: 1494px) {
+				.content-panel {
+					margin: 0 auto;
+					max-width: 700px;
+					padding-top: 14em;
+				}
+				.main-panel {
+					height: 800px;
+					max-height: 800px;
+				}
+
+				.info-image {
+					background-position: center;
+					background-size: 800px 1200px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.info-image-panel {
+					max-height: 1400px;
+				}
+
+			}
+
+			@media screen and (max-width: 1494px) {
+				.content-panel {
+					margin: 0 auto;
+					min-width: 650px;
+					padding-top: 10em;
+				}
+
+				.info-image {
+					background-position: center;
+					background-size: 800px 1200px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.info-image-panel {
+					max-height: 1400px;
+					min-width: 850px;
+				}
+
+				.main-panel {
+					height: 690px;
+					min-height: 390px;
+				}
+
+			}
+
+
+			@media screen and (max-width: 919px) {
+				.info-image {
+					background-position: center;
+					background-size: 700px 1000px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+			}
+
+			@media screen and (max-width: 767px) {
+				.content-panel {
+					margin: 0 auto;
+					min-width: 600px;
+					padding-top: 10em;
+				}
+
+				.main-panel {
+					height: 690px;
+					min-height: 390px;
 				}
 
 				.list-panel {
-					font-size: 68%;
-					padding-bottom: 30em;
+					padding-bottom: 65em;
+				}
+
+				.info-image {
+					background-position: center;
+					background-size: 550px 1000px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.info-image-panel {
+					max-height: 1200px;
+					min-width: 600px;
+				}
+
+				.signin-navbar {
+					float: none !important;
+					padding-bottom: 5em;
+				}
+
+				.form-panel {
+					padding-top: 5em;
+				}
+
+			}
+
+			@media screen and (max-width: 689px) {
+				.info-image {
+					background-position: center;
+					background-size: 450px 1000px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.info-image-panel {
+					max-height: 1200px;
+					min-width: 500px;
+				}
+
+				.content-panel {
+					margin: 0 auto;
+					min-width: 500px;
+					padding-top: 10em;
+				}
+			}
+
+
+			@media screen and (max-width: 500px) {
+
+				.content-panel {
+					margin: 0 auto;
+					min-width: 350px;
+					padding-top: 15em;
+				}
+
+				.info-image {
+					background-position: center;
+					background-size: 350px 850px;
+					height: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.info-image-panel {
+					max-height: 1000px;
+					min-width: 300px;
+				}
+
+
+				.list-panel {
+					padding-bottom: 65em;
 				}
 
 				.btn {
-					font-size: 1em;
+					font-size: 1.2em;
 				}
 
 				.content-panel ul {
-					font-size: 35%;
+					font-size: 45%;
 
+				}
+
+				.form-panel {
+					padding-top: 6em;
+					padding-bottom: 6em;
 				}
 			}
